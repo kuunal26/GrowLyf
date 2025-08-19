@@ -1,0 +1,222 @@
+.growlyf-login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f8fc;
+}
+
+.growlyf-login-box {
+  display: flex;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(60,60,90,0.08), 0 1.5px 8px rgba(60,60,90,0.03);
+  overflow: hidden;
+  max-width: 720px;
+  width: 100%;
+}
+
+.growlyf-login-illustration {
+  background: #f6fbff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49%;
+  min-width: 250px;
+  padding: 32px 14px;
+}
+
+.growlyf-login-image {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.growlyf-login-formpanel {
+  flex: 1;
+  padding: 48px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.growlyf-login-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+  margin-bottom: 28px;
+  color: #282845;
+  text-align: left;
+}
+
+.growlyf-form-group {
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+.growlyf-form-group label {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #6c7a89;
+  display: block;
+}
+
+.growlyf-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1.5px solid #e0e6ed;
+  background: #f6fbff;
+  font-size: 1.1rem;
+  transition: border .18s;
+  margin-bottom: 2px;
+}
+
+.growlyf-input:focus {
+  border-color: #1976d2;
+  background: #fff;
+  outline: none;
+}
+
+.growlyf-form-actions {
+  margin-top: 18px;
+}
+
+.growlyf-login-btn {
+  width: 100%;
+  padding: 13px;
+  font-weight: bold;
+  font-size: 1.12rem;
+  background: linear-gradient(90deg, #1d8cf8 30%, #3358f4 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  letter-spacing: .9px;
+  box-shadow: 0 1.5px 6px rgba(60,60,90,0.07);
+  cursor: pointer;
+  transition: background .18s;
+}
+
+.growlyf-login-btn:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+.growlyf-spinner {
+  width: 23px;
+  height: 23px;
+  border: 3px solid #e3e3e6;
+  border-radius: 50%;
+  border-top-color: #3358f4;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: -4px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsiveness */
+@media (max-width: 690px) {
+  .growlyf-login-box { flex-direction: column; }
+  .growlyf-login-illustration, .growlyf-login-formpanel { width: 100%; min-width: unset; }
+  .growlyf-login-formpanel { padding: 32px 14px; }
+}
+@media (max-width: 690px) {
+  .growlyf-login-box { flex-direction: column; }
+  .growlyf-login-illustration, .growlyf-login-formpanel { width: 100%; min-width: unset; }
+  .growlyf-login-formpanel { padding: 32px 14px; }
+}
+.growlyf-signup-link {
+  text-align: center;
+  font-size: 1rem;
+  color: #6c7a89;
+}
+
+.growlyf-signup-anchor {
+  color: #1976d2;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+.growlyf-signup-anchor:hover {
+  color: #0d47a1;
+  text-decoration: underline;
+}
+/* Login specific styles (add to existing CSS) */
+.dynamic-login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.dynamic-login-container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 40px 30px 30px 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  max-width: 420px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  animation: slideUp 0.8s ease-out;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+.footer-credit {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #e1e5e9;
+}
+
+.footer-credit p {
+  color: #888;
+  font-size: 14px;
+  margin: 0;
+}
+
+.silicon-savants {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Mobile Responsiveness for Login */
+@media (max-width: 600px) {
+  .dynamic-login-container {
+    padding: 30px 20px 25px 20px;
+    margin: 10px;
+  }
+  
+  .brand-title {
+    font-size: 2rem;
+  }
+  
+  .footer-credit p {
+    font-size: 13px;
+  }
+}
