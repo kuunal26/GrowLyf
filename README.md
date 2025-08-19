@@ -100,7 +100,7 @@ GET  /top        # View top products
 
 👨‍💻 Author
 
-Kunal Dhanawade & Revam Awalee
+Kunal Dhanawade & Revam Awale
 MERN Stack Developers | Electronics & Telecommunication Engineers
 <p>
   <a href="https://github.com/kuunal26">
