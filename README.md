@@ -43,7 +43,7 @@
 
  1. Clone this repo
 ```bash
-git clone https://github.com/<your-username>/GrowLyf.git
+git clone https://github.com/kuunal26/GrowLyf.git
 cd GrowLyf-main
 ```
  2. Install & Run Backend
